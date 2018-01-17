@@ -1,0 +1,45 @@
+{
+  "name": "frontend-test-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-webpack": "webpack-dev-server --hot --config=webpack.config.js",
+    "schema": "babel-node generateSchema --presets es2015,stage-0",
+    "start": "babel-node index.js --presets es2015,stage-0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junglejobs-co/frontend-test-task.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junglejobs-co/frontend-test-task/issues"
+  },
+  "homepage": "https://github.com/junglejobs-co/frontend-test-task#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-relay-plugin": "^0.8.1",
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.12.3",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "react-relay": "^0.8.1",
+    "relay": "^0.8.0-1",
+    "webpack": "^3.10.0",
+    "webpack-dev-middleware": "^2.0.3",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-relay": "^1.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "graphql-relay": "^0.5.4"
+  }
+}
